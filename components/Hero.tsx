@@ -1,15 +1,13 @@
-import Image from 'next/image';
+import { withBasePath } from '../lib/paths';
 
 export default function Hero() {
   return (
     <section id="home" className="hero">
       <div className="hero-media" aria-hidden="true">
-        <Image
-          src="/delpin.jpg"
+        {/* Native img: path harus include basePath agar jalan di GitHub Pages */}
+        <img
+          src={withBasePath('/delpin.jpg')}
           alt=""
-          fill
-          priority
-          sizes="100vw"
           className="hero-photo"
         />
       </div>

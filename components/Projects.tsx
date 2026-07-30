@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import Reveal from './Reveal';
+import { withBasePath } from '../lib/paths';
 
 const projects = [
   {
@@ -53,11 +53,9 @@ export default function Projects() {
                 className="project-link"
               >
                 <div className="project-preview">
-                  <Image
-                    src={project.illustration}
+                  <img
+                    src={withBasePath(project.illustration)}
                     alt={`Ilustrasi ${project.name}`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 900px"
                     className="project-preview-img"
                   />
                   <div className="project-preview-veil" aria-hidden="true" />

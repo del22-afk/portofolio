@@ -351,6 +351,10 @@ main {
 
 .hero-media img,
 .hero-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: 68% 42%;
   transform: none;
@@ -710,6 +714,10 @@ main {
 }
 
 .project-preview-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   transition: transform 0.7s var(--ease-out);
